@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: aliceblue;}
+    .attribution a { color: hsl(0, 100%, 50%); }
+
+  </style>
+</head>
+<body>
+  <!-- Sign-up form start -->
+<div class="container">
+  <div class="newsletter">
+<h1 class="heading">Stay updated!</h1>
+<p id="joinig">Join 60,000+ product managers receiving monthly <br> updates on:</p> 
+<div class="lists">
+  <p><img src="assets/images/icon-list.svg">  Product discovery and building what matters</p>
+  <p><img src="assets/images/icon-list.svg">Measuring to ensure updates are a success</p>
+  <p><img src="assets/images/icon-list.svg">And much more!</p>
+</div>
+<div class="address">
+  <div class="errnlabel">
+    <label for="EmailID">Email Address</label>
+    <span id="errmsg">Valid email required</span>
+  </div>
+  <input type="email" placeholder="email@company.com" id="EmailID">
+  <button onclick="Newsletter()" class="subs-btn">Subscribe to monthly newsletter</button>
+</div>
+  </div>
+  <div class="bg">
+  </div>
+</div>
+<div class="success">
+  <img src="assets/images/icon-success.svg">
+  <h1 class="s-heading">Thanks For<br>Subscribing!</h1>
+  <p id="para">A confirmation email has been sent to <br><span id="useremail">ash@loremcompany.com.</span> 
+    Please open it and click <br> the button inside to confirm your subscription.</p>
+    <button class="subs-btn" onclick="BackToNews()">Dismiss Message</button>
+</div>
+  <!-- Success message end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    Coded by <a href="https://github.com/Niti60">Nitish</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
