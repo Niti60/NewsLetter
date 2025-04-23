@@ -17,15 +17,17 @@
           container.style.display = "none"
           userEmail.innerText = email.value;
         }
-        document.querySelector("#EmailID").value = ""
-        email.style.backgroundColor = "";
-email.style.border = "";
-errmsg.style.display = "none";
         }
         // back to newsletter page
         function BackToNews(){
+            //setting everything to default 
+        document.querySelector("#EmailID").value = ""
+        email.style.backgroundColor = "";
+        email.style.border = "";
+        errmsg.style.display = "none";
+            //getting back to main page 
         let success = document.querySelector(".success");
         let container = document.querySelector(".container")
-          success.style.display = "none"
-          container.style.display = "flex"
+        success.style.display = "none"
+        container.style.display = "flex"
         }
