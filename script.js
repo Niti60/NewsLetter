@@ -18,6 +18,9 @@
           userEmail.innerText = email.value;
         }
         document.querySelector("#EmailID").value = ""
+        email.style.backgroundColor = "";
+email.style.border = "";
+errmsg.style.display = "none";
         }
         // back to newsletter page
         function BackToNews(){
